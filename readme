@@ -1,0 +1,69 @@
+======================================================
+🤖 JARVIS AI - ASISTENTE VIRTUAL LOCAL
+======================================================
+Creado por: Josué
+Descripción: Asistente de voz en Python impulsado por el motor
+neuronal Llama-3 (Groq), con síntesis de voz Edge TTS y control
+dinámico del sistema operativo Windows.
+
+---
+
+## PASO 1: REQUISITOS DEL SISTEMA
+
+1. Tener instalado Python (Se recomienda versión 3.11 de 64 bits).
+2. Durante la instalación de Python, asegurarse de marcar la casilla
+   "Add Python.exe to PATH".
+3. Un micrófono funcional conectado a la PC.
+
+---
+
+## PASO 2: CONSEGUIR EL "CEREBRO" (API KEY)
+
+Jarvis utiliza la supercomputadora de Groq para pensar instantáneamente
+y de forma gratuita. Para conectarlo:
+
+1. Entra a: https://console.groq.com/
+2. Inicia sesión con tu cuenta de Google.
+3. Ve al menú lateral izquierdo y selecciona "API Keys".
+4. Haz clic en "Create API Key", ponle un nombre (ej. "Jarvis").
+5. Copia el código generado (empieza con gsk\_...).
+   ¡IMPORTANTE! No compartas esta clave. Pégala en la línea 13 del
+   archivo asistente.py donde dice "PEGA_TU_CLAVE_AQUI".
+
+---
+
+## PASO 3: INSTALACIÓN DE SENTIDOS (LIBRERÍAS)
+
+Abre la consola de Windows (Símbolo del sistema / CMD) y ejecuta
+este comando para instalar los oídos, la boca y la conexión a Groq:
+
+pip install groq SpeechRecognition edge-tts pygame pyaudio
+
+- Nota sobre PyAudio: Si en algún momento marca letras rojas al
+  instalar pyaudio, asegúrate de estar usando Python 3.11, ya que
+  versiones más nuevas a veces requieren configuraciones extra.
+
+---
+
+## PASO 4: CÓMO ENCENDER A JARVIS
+
+1. Abre la consola de Windows (CMD).
+2. Navega a la carpeta del proyecto o ejecuta directamente el archivo
+   con la ruta completa. Por ejemplo:
+
+   python C:\Users\nameuser\Desktop\Mi_Asistente\asistente.py
+   (varía según su dispositivo)
+
+3. Espera a escuchar: "Sistema de audio turbo calibrado".
+4. Di la palabra mágica "Jarvis", espera el pitido de confirmación,
+   y dale tu orden.
+
+---
+
+## CAPACIDADES ACTUALES (MÓDULOS ACTIVOS)
+
+- [Oídos]: Reconocimiento de voz por Google con filtro anti-ruido.
+- [Boca]: Voz neuronal de Microsoft (Jorge) con Falso Streaming
+  para latencia cero.
+- [Manos]: Control autónomo de PC (Abrir webs, programas y cerrar procesos).
+- # [Cerebro]: Llama 3.3 70B Versatile con memoria de corto plazo.
